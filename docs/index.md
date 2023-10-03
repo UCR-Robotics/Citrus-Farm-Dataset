@@ -33,20 +33,20 @@ The sensor setup on the robot is illustrated in the figure below (left).
 The corresponding reference frames are highlighted in the figure below (right).
 Red, green and blue bars denote x, y and z axes respectively. They are generated in RViz using real calibrated extrinsic parameters.
 
-![Robot Sensor Setup](../figures/robot.png)
+![Robot Sensor Setup](./figures/robot.png)
 
 ## Sample Data
 ### Sample Multispectral Images
-![Sample Multispectral Images](../figures/image.png)
+![Sample Multispectral Images](./figures/image.png)
 
 ### Sample Trajectories
-![Sample Trajectories](../figures/trajectory.png)
+![Sample Trajectories](./figures/trajectory.png)
 
 ### Sample Field Views
-![Sample Field Views](../figures/field.png)
+![Sample Field Views](./figures/field.png)
 
 ## Sequence Info
-![Sequence Info](../figures/sequence.png)
+![Sequence Info](./figures/sequence.png)
 
 ## Data Format and Download
 The primary data format we used in data collection is [ROS bags](http://wiki.ros.org/rosbag). To simplify data storage and transfer, we split recorded data into blocks of 4GB, and categorized them based on their respective modalities.
