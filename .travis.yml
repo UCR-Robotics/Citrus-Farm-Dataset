@@ -1,0 +1,17 @@
+language: ruby
+rvm:
+  - 2.4.1
+branches:
+  only:
+  - main
+before_script: cd docs
+script: JEKYLL_ENV=production bundle exec jekyll build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: docs/_site
+  keep-history: true
+  on:
+    branch: main
+    target_branch: gh-pages
