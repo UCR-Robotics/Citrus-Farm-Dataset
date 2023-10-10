@@ -1,0 +1,36 @@
+header:
+  - titles:
+      # @start locale config
+      en      : &EN       Home
+      # @end locale config
+    url: /index.html
+
+  - titles:
+      # @start locale config
+      en      : &EN       Sample Data
+      # @end locale config
+    url: /data.html
+
+  - titles:
+      # @start locale config
+      en      : &EN       Calibration
+      # @end locale config
+    url: /calibration.html
+
+  - titles:
+      # @start locale config
+      en      : &EN       Download
+      # @end locale config
+    url: /download.html
+
+  - titles:
+      # @start locale config
+      en      : &EN       Tools
+      # @end locale config
+    url: /tools.html
+
+  - titles:
+      # @start locale config
+      en      : &EN       About
+      # @end locale config
+    url: /about.html
