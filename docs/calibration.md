@@ -1,7 +1,6 @@
 ---
 layout: article
-titles:
-  en      : &EN       Calibration
+title: Calibration
 ---
 
 TBD.

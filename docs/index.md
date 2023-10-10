@@ -1,7 +1,6 @@
 ---
 layout: article
-titles:
-  en      : &EN    CitrusFarm Dataset
+title: CitrusFarm Dataset
 ---
 
 ## Introduction

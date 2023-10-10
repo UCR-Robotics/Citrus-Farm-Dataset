@@ -1,7 +1,6 @@
 ---
 layout: article
-titles:
-  en      : &EN       Tools
+title: Tools
 ---
 
 TBD.

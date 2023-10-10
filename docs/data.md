@@ -1,7 +1,6 @@
 ---
 layout: article
-titles:
-  en      : &EN       Data Collection
+title: Data Collection
 ---
 
 ## Mobile Robot Platform

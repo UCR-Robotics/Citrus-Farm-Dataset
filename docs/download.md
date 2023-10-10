@@ -1,7 +1,6 @@
 ---
 layout: article
-titles:
-  en      : &EN       Download
+title: Download
 ---
 
 ## Sequence Info

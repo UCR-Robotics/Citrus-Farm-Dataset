@@ -1,36 +1,18 @@
 header:
-  - titles:
-      # @start locale config
-      en      : &EN       Home
-      # @end locale config
+  - title: Home
     url: /index.html
 
-  - titles:
-      # @start locale config
-      en      : &EN       Sample Data
-      # @end locale config
+  - title: Sample Data
     url: /data.html
 
-  - titles:
-      # @start locale config
-      en      : &EN       Calibration
-      # @end locale config
+  - title: Calibration
     url: /calibration.html
 
-  - titles:
-      # @start locale config
-      en      : &EN       Download
-      # @end locale config
+  - title: Download
     url: /download.html
 
-  - titles:
-      # @start locale config
-      en      : &EN       Tools
-      # @end locale config
+  - title: Tools
     url: /tools.html
 
-  - titles:
-      # @start locale config
-      en      : &EN       About
-      # @end locale config
+  - title: About
     url: /about.html
