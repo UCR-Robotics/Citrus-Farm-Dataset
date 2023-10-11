@@ -2,8 +2,8 @@ header:
   - title: Home
     url: /index.html
 
-  - title: Sample Data
-    url: /data.html
+  - title: Sequences
+    url: /sequence.html
 
   - title: Calibration
     url: /calibration.html

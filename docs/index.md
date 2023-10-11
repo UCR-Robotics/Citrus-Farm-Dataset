@@ -32,3 +32,9 @@ CitrusFarm dataset is released under the [Attribution-ShareAlike 4.0 Internation
 This work is supported in part by NSF, USDA-NIFA, ONR and the University of California UC-MRPI.
 Furthermore, we thank Dr. Peggy Mauk and the staff team at UCR’s Agricultural Experimental Station for their support in our work.
 
+<img src="./figures/logos/NSF.png" alt="NSF logo" width="15%"/>
+<img src="./figures/logos/ONR.png" alt="ONR logo" width="23%"/>
+<img src="./figures/logos/USDA.jpg" alt="USDA logo" width="15%"/>
+<img src="./figures/logos/LACA.png" alt="LACA logo" width="15%"/>
+<img src="./figures/logos/ISVC2023.png" alt="ISVC2023 logo" width="23%"/>
+<img src="./figures/logos/ARCS.png" alt="ARCS logo" width="90%"/>
