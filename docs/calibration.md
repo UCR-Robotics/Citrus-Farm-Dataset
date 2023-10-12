@@ -12,6 +12,7 @@ Red, green and blue bars denote x, y and z axes respectively. They are generated
 ![Robot Sensor Setup](./figures/robot.png)
 
 ## Extrinsic Parameter Calibration
+### Calibrated Parameters
 ![Extrinsic Calibration Summary](./figures/extrinsic_param_summary.png)
 
 Most frame names are self-explanatory; you can find its correspondence to each sensor in the sensor-setup figure above.
@@ -21,6 +22,7 @@ Other notes regarding GPS frame:
 - With one GPS receiver on the robot, we can access only the 3D position (rather than full 6-DoF pose) of the robot. Therefore, the orientation (quaternion) component of LiDAR-GPS is not very meaningful.
 - More precisely, the GPS-RTK data is with respect to the center of the GPS receiver; if your algorithm output is expressed in IMU or LiDAR frame, it is better to convert it to GPS frame first, before computing the error (e.g., Absolute Trajectory Error (ATE)). We provide such evaluation scripts in the [tools](tools.html) as well.
 
+### Calibration Process
 ![Calibration images](./figures/calibration_image.png)
 
 In summary, these extrinsic parameters are obtained by four steps:

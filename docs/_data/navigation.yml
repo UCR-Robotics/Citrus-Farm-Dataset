@@ -16,3 +16,6 @@ header:
 
   - title: About
     url: /about.html
+
+  - title: Github
+    url: https://github.com/UCR-Robotics/Citrus-Farm-Dataset

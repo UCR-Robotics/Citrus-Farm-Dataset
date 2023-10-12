@@ -12,13 +12,21 @@ CitrusFarm is a multimodal agricultural robotics dataset that provides both **mu
 
 **Related Publications:**
 H. Teng, Y. Wang, X. Song and K. Karydis, "Multimodal Dataset for Localization, Mapping and Crop Monitoring in Citrus Tree Farms", in the 18th International Symposium on Visual Computing (ISVC 2023). ([preprint](https://arxiv.org/abs/2309.15332))
+```
+@inproceedings{teng2023multimodal,
+  title={Multimodal Dataset for Localization, Mapping and Crop Monitoring in Citrus Tree Farms},
+  author={Teng, Hanzhe and Wang, Yipeng and Song, Xiaoao and Karydis, Konstantinos},
+  booktitle={Advances in Visual Computing: 18th International Symposium (ISVC)},
+  year={2023}
+}
+```
 
 ## License
 CitrusFarm dataset is released under the [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0). You are allowed to **share** and **adapt** under the condition that you **give appropriate credit**, **indicate if changes were made**, and distribute your contributions under the **same license**.
 
 ## Acknowledgement
 This work is supported in part by NSF, USDA-NIFA, ONR and the University of California UC-MRPI.
-Furthermore, we thank Dr. Peggy Mauk and the staff team at UCR’s Agricultural Experimental Station for their support in our work.
+Furthermore, we thank Dr. Peggy Mauk and the staff team at UCR's Agricultural Experimental Station for their support in our work.
 
 ## Website
 Please check [our website](https://ucr-robotics.github.io/Citrus-Farm-Dataset/) for more information regarding robot sensor setup, sample images and trajectories, sample field views, data format, data download, sequence information, calibration data and results, tools and resources (Python scripts), example use cases, and more!
