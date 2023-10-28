@@ -8,7 +8,7 @@ The primary data format we used in data collection is [ROS bags](http://wiki.ros
 
 You may download only those ROS bags that are of your interest. After download, simply place these ROS bags in the same folder and run `rosbag play *.bag`. ROS will automatically arrange the data across all bags and sequence the playback according to their timestamps.
 
-To accomodate users from diverse application domains, we also provide a Python script that can extract data from rosbags and save them as indivisual files (images, pcd, csv files). See [tools](tools.html) for more information.
+To accommodate users from diverse application domains, we also provide a Python script that can extract data from rosbags and save them as individual files (images, pcd, csv files). See [tools](tools.html) for more information.
 
 ## Folder Structure
 ```
@@ -55,4 +55,42 @@ Alternatively, you may download the dataset from two other backup sources:
 - Baidu Pan (TODO)
 
 ## ROSbag Info
-TBD.
+
+| ROS Bag        | ROS Topic                                 | Msg Type                                | Sensor         |
+|----------------|-------------------------------------------|-----------------------------------------|----------------|
+| adk_*.bag      | /flir/adk/image_thermal                   | sensor_msgs/Image                       | Thermal Camera |
+|                | /flir/adk/time_reference                  | sensor_msgs/TimeReference               | Thermal Camera |  
+| base_*.bag     | /microstrain/imu/data                     | sensor_msgs/Imu                         | IMU            |
+|                | /microstrain/mag                          | sensor_msgs/MagneticField               | IMU            |
+|                | /piksi/navsatfix_best_fix                 | sensor_msgs/NavSatFix                   | GPS-RTK        |
+|                | /piksi/debug/receiver_state               | piksi_rtk_msgs/<br>ReceiverState_V2_4_1 | GPS-RTK        |
+|                | /velodyne_points                          | sensor_msgs/PointCloud2                 | LiDAR          |
+| blackfly_*.bag | /flir/blackfly/cam0/image_raw             | sensor_msgs/Image                       | Mono Camera    |
+|                | /flir/blackfly/cam0/time_reference        | sensor_msgs/TimeReference               | Mono Camera    |
+| mapir_*.bag    | /mapir_cam/image_raw                      | sensor_msgs/Image                       | R-G-NIR Camera |
+|                | /mapir_cam/time_reference                 | sensor_msgs/TimeReference               | R-G-NIR Camera |
+| odom_*.bag     | /gps/fix/odometry                         | nav_msgs/Odometry                       | GPS-RTK        |
+|                | /jackal_velocity_controller/odom          | nav_msgs/Odometry                       | Wheel Odometry |
+| zed_*.bag      | /zed2i/zed_node/confidence/confidence_map | sensor_msgs/Image                       | Zed camera     |
+|                | /zed2i/zed_node/depth/camera_info         | sensor_msgs/CameraInfo                  | Zed camera     |
+|                | /zed2i/zed_node/depth/depth_registered    | sensor_msgs/Image                       | Zed camera     |
+|                | /zed2i/zed_node/imu/data                  | sensor_msgs/Imu                         | Zed camera     |
+|                | /zed2i/zed_node/imu/mag                   | sensor_msgs/MagneticField               | Zed camera     |
+|                | /zed2i/zed_node/left/camera_info          | sensor_msgs/CameraInfo                  | Zed camera     |
+|                | /zed2i/zed_node/left/image_rect_color     | sensor_msgs/Image                       | Zed camera     |
+|                | /zed2i/zed_node/pose                      | geometry_msgs/PoseStamped               | Zed camera     |
+|                | /zed2i/zed_node/right/camera_info         | sensor_msgs/CameraInfo                  | Zed camera     |
+|                | /zed2i/zed_node/right/image_rect_color    | sensor_msgs/Image                       | Zed camera     |
+
+Notes about the three GPS-RTK data types:
+- `/piksi/navsatfix_best_fix` is the raw RTK data recorded in the fixed mode;
+- `/piksi/debug/receiver_state` is the debugging data to show info such as number of satellites;
+- `/gps/fix/odometry` is the post-processed data (via WGS84) that can serve as the **ground-truth trajectories**.
+- Lastly, we ensured that the GPS-RTK system was always operating in the fixed mode (more accurate than the floating mode) in all experiments, thanks to the high-gain antennas.
+
+Notes about time synchronization:
+- `/*/time_reference` recorded the hardware clock time of cameras if available, in case they are useful at some point. In general, you can ignore this topic unless you know what you are doing. 
+- In experiments, we have observed that using hardware clock time of each camera can result in larger drift, since these cameras are of different kinds/types (with distinct crystal oscillators, some are running faster while others slower).
+- Ideally, for the best performance, we shall have hardware synchronization on professional cameras that provide an interface to connect to an external reference clock. In our case, using software time (ROS time) is also fine.
+
+Please see [Calibration](calibration.html) for more information regarding sensor setup, camera specifications, intrinsic and extrinsic parameters.

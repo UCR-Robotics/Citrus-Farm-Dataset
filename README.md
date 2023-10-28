@@ -8,8 +8,6 @@ CitrusFarm is a multimodal agricultural robotics dataset that provides both **mu
 
 **Authors:** Hanzhe Teng, Yipeng Wang, Xiaoao Song and Konstantinos Karydis from [ARCS Lab](https://sites.google.com/view/arcs-lab/) at [UC Riverside](https://www.ucr.edu/).
 
-**Videos:** Will be posted once available.
-
 **Related Publications:**
 H. Teng, Y. Wang, X. Song and K. Karydis, "Multimodal Dataset for Localization, Mapping and Crop Monitoring in Citrus Tree Farms", in the 18th International Symposium on Visual Computing (ISVC 2023). ([preprint](https://arxiv.org/abs/2309.15332))
 ```

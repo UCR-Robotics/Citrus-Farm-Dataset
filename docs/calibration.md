@@ -34,4 +34,26 @@ In summary, these extrinsic parameters are obtained by four steps:
 For details regarding how we performed these calibration steps, please refer to our paper or the README file in the calibration data folder.
 
 ## Intrinsic Parameter Calibration
-TBD.
+### Camera Specifications
+
+| Camera           | Modality      | Shutter | Rate  | Resolution  | H-FOV | Bit Depth | Channel |
+|------------------|---------------|---------|-------|-------------|-------|-----------|---------|
+| FLIR Blackfly    | Monochrome    | Global  | 10 Hz | 1440 x 1080 | 72°   | 8         | 1       |
+| FLIR ADK         | Thermal       | Global  | 10 Hz | 640 x 512   | 65°   | 8         | 1       |
+| Stereolabs Zed2i | Stereo RGB    | Rolling | 10 Hz | 1280 x 720  | 102°  | 8         | 3 x 2   |
+| Stereolabs Zed2i | Depth         | Rolling | 10 Hz | 1280 x 720  | 102°  | 32        | 1       |
+| Mapir Survey3    | Red-Green-NIR | Rolling | 10 Hz | 1280 x 720  | 85°   | 8         | 3       |
+
+Note: Although most cameras can support up to 30 Hz or 60 Hz frame rate, we operate
+them at 10 Hz to match LiDAR’s operating rate (and also save storage space).
+
+### Camera Intrinsics
+In Kalibr toolbox, the calibration of intrinsic parameters and extrinsic parameters are performed jointly in the nonlinear optimization process. Therefore, the intrinsic parameters of all four cameras are obtained together with their extrinsic parameters in the multi-camera calibration step.
+
+This file contains all the results: [[01] multi-cam-camchain.yaml](https://ucr-robotics.s3.us-west-2.amazonaws.com/citrus-farm-dataset/Calibration/results/[01]%20multi-cam-camchain.yaml) (included in the Calibration folder of this dataset)
+
+### IMU Intrinsics
+The intrinsic parameter calibration of IMU is performed by using this Github repo: [allan_variance_ros](https://github.com/ori-drs/allan_variance_ros).
+The calibration result is [microstrain_gx5.yaml](https://ucr-robotics.s3.us-west-2.amazonaws.com/citrus-farm-dataset/Calibration/config/microstrain_gx5.yaml) (included in the Calibration folder of this dataset), which has been used as input to the following camera-IMU calibration step.
+
+Feel free to [reach out to us](about.html) or open a new issue on the [Github repo](https://github.com/UCR-Robotics/Citrus-Farm-Dataset) if you have any further questions.
