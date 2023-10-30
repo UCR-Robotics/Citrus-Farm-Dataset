@@ -6,7 +6,7 @@ title: About
 
 The authors of this work are: Hanzhe Teng, Yipeng Wang, Xiaoao Song and Konstantinos Karydis from the [ARCS Lab](https://sites.google.com/view/arcs-lab/people) at the [University of California, Riverside](https://www.ucr.edu/).
 
-You may reach out to us via emails or open a new issue in the [github repository](https://github.com/UCR-Robotics/Citrus-Farm-Dataset).
+You may reach out to us via emails or open a new issue in the [Github repository](https://github.com/UCR-Robotics/Citrus-Farm-Dataset).
 - Hanzhe Teng (hteng007 AT ucr.edu)
 - Konstantinos Karydis (kkarydis AT ece.ucr.edu)
 
