@@ -700,7 +700,7 @@ citrus-farm-dataset:
     flir_blackfly_cam_info.yaml:
       md5: 975a2e212352fab67a6dd02f7e88e9e0
     interactive_recording.py:
-      md5: 38c4e403431044c992fdb6c371fe9646
+      md5: 27475ffb139b313570bbf5edc991bd5a
     invert_thermal.py:
       md5: a09361dbb037bf955ab996d409c0df61
     kalibr_create_target_pdf.py:
