@@ -1,3 +1,21 @@
+# File: bag2files.py
+# Authors: Hanzhe Teng et al.
+# Date: 2023-10-31
+# Description: This script is part of the CitrusFarm Dataset (https://ucr-robotics.github.io/Citrus-Farm-Dataset/),
+#   which is released under the Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.
+
+"""
+This script extracts data from rosbags and saves them to individual files.
+
+Usage: python bag2files.py <src_folder> <output_folder> (e.g. python bag2files.py 01_13B_Jackal /path/to/output)
+  <src_folder> is the folder containing rosbags to be processed
+  <output_folder> is the folder to save the extracted data
+
+You can also modify the following two variables to select those rosbags and topics that you want to process:
+  rosbag_prefixes_of_interest
+  known_topic_info
+"""
+
 import argparse
 import csv
 import os

@@ -1,3 +1,13 @@
+# File: download_citrusfarm.py
+# Authors: Hanzhe Teng et al.
+# Date: 2023-10-11
+# Description: This script is part of the CitrusFarm Dataset (https://ucr-robotics.github.io/Citrus-Farm-Dataset/),
+#   which is released under the Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.
+
+"""
+This script downloads the CitrusFarm Dataset from the AWS S3 bucket and verifies the MD5 checksums.
+"""
+
 import wget
 import os
 import yaml

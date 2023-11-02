@@ -1,3 +1,13 @@
+# File: gen_dataset_file_list.py
+# Authors: Hanzhe Teng et al.
+# Date: 2023-10-11
+# Description: This script is part of the CitrusFarm Dataset (https://ucr-robotics.github.io/Citrus-Farm-Dataset/),
+#   which is released under the Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.
+
+"""
+This script generates the dataset_file_list.yaml file, which contains the MD5 checksums of all files in the dataset.
+"""
+
 import os
 import hashlib
 import yaml
