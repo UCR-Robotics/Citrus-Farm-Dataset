@@ -1,4 +1,5 @@
-# Citrus-Farm-Dataset
+[![Leading Image](docs/figures/leading_image.png)](https://ucr-robotics.github.io/Citrus-Farm-Dataset)
+
 ## Introduction
 CitrusFarm is a multimodal agricultural robotics dataset that provides both **multispectral images** and **navigational sensor data** for localization, mapping and crop monitoring tasks.
 - It was collected by a wheeled mobile robot in the [Agricultural Experimental Station](https://cnas.ucr.edu/resources/agricultural-experiment-station) at the [University of California Riverside](https://www.ucr.edu/) in the summer of 2023.
@@ -7,6 +8,8 @@ CitrusFarm is a multimodal agricultural robotics dataset that provides both **mu
 - It spans a total operation time of 1.7 hours, covers a total distance of 7.5 km, and constitutes 1.3 TB of data.
 
 **Authors:** Hanzhe Teng, Yipeng Wang, Xiaoao Song and Konstantinos Karydis from [ARCS Lab](https://sites.google.com/view/arcs-lab/) at [UC Riverside](https://www.ucr.edu/).
+
+**Related Workshop Spotlight:** [Present and Future of Agricultural Robotics and Technologies: Academic and Industry Perspectives](https://sites.google.com/view/agrobotics) (IROS 2023)
 
 **Related Publications:**
 H. Teng, Y. Wang, X. Song and K. Karydis, "Multimodal Dataset for Localization, Mapping and Crop Monitoring in Citrus Tree Farms", in the 18th International Symposium on Visual Computing (ISVC 2023). ([preprint](https://arxiv.org/abs/2309.15332))

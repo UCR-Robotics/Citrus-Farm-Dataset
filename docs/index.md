@@ -1,9 +1,11 @@
 ---
 layout: article
-title: CitrusFarm Dataset
+# title: CitrusFarm Dataset
 ---
 
-## Introduction
+![Leading Image](./figures/leading_image.png)
+
+## CitrusFarm Dataset
 CitrusFarm is a multimodal agricultural robotics dataset that provides both **multispectral images** and **navigational sensor data** for localization, mapping and crop monitoring tasks.
 - It was collected by a wheeled mobile robot in the [Agricultural Experimental Station](https://cnas.ucr.edu/resources/agricultural-experiment-station) at the [University of California Riverside](https://www.ucr.edu/) in the summer of 2023.
 - It offers a total of **nine** sensing modalities, including stereo RGB, depth, monochrome, near-infrared and thermal images, as well as wheel odometry, LiDAR, IMU and GPS-RTK data.
@@ -11,6 +13,8 @@ CitrusFarm is a multimodal agricultural robotics dataset that provides both **mu
 - It spans a total operation time of 1.7 hours, covers a total distance of 7.5 km, and constitutes 1.3 TB of data.
 
 **Authors:** Hanzhe Teng, Yipeng Wang, Xiaoao Song and Konstantinos Karydis from [ARCS Lab](https://sites.google.com/view/arcs-lab/) at [UC Riverside](https://www.ucr.edu/).
+
+**Related Workshop Spotlight:** [Present and Future of Agricultural Robotics and Technologies: Academic and Industry Perspectives](https://sites.google.com/view/agrobotics) (IROS 2023)
 
 **Related Publications:**
 H. Teng, Y. Wang, X. Song and K. Karydis, "Multimodal Dataset for Localization, Mapping and Crop Monitoring in Citrus Tree Farms", in the 18th International Symposium on Visual Computing (ISVC 2023). ([preprint](https://arxiv.org/abs/2309.15332))
@@ -31,8 +35,9 @@ This work is supported in part by NSF, USDA-NIFA, ONR and the University of Cali
 Furthermore, we thank Dr. Peggy Mauk and the staff team at UCR's Agricultural Experimental Station for their support in our work.
 
 <img src="./figures/logos/NSF.png" alt="NSF logo" width="15%"/>
-<img src="./figures/logos/ONR.png" alt="ONR logo" width="23%"/>
+<img src="./figures/logos/ONR.png" alt="ONR logo" width="24%"/>
 <img src="./figures/logos/USDA.jpg" alt="USDA logo" width="15%"/>
 <img src="./figures/logos/LACA.png" alt="LACA logo" width="15%"/>
-<img src="./figures/logos/ISVC2023.png" alt="ISVC2023 logo" width="23%"/>
-<img src="./figures/logos/ARCS.png" alt="ARCS logo" width="90%"/>
+<img src="./figures/logos/IROS.jpg" alt="IROS logo" width="18%"/>
+<img src="./figures/logos/ISVC2023.png" alt="ISVC2023 logo" width="22%"/>
+<img src="./figures/logos/ARCS.png" alt="ARCS logo" width="70%"/>

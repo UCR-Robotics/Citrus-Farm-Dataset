@@ -19,4 +19,4 @@ title: Sequences
 ![Sample Trajectories](./figures/trajectory.png)
 
 ## Sample Multispectral Images
-![Sample Multispectral Images](./figures/image.png)
+![Sample Multispectral Images](./figures/multispectral.png)

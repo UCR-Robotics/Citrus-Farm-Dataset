@@ -20,7 +20,7 @@ It is worth noting that `base_link` is the frame used by wheel odometry, and is 
 
 Other notes regarding GPS frame:
 - With one GPS receiver on the robot, we can access only the 3D position (rather than full 6-DoF pose) of the robot. Therefore, the orientation (quaternion) component of LiDAR-GPS extrinsic parameters is not very meaningful.
-- More precisely, the GPS-RTK data is with respect to the center of the GPS receiver; if your algorithm output is expressed in IMU or LiDAR frame, it is better to convert it to the GPS frame first and align orientation using SVD, before computing the actual error (e.g., Absolute Trajectory Error (ATE)). We provide such evaluation scripts in the [tools](tools.html) as well.
+- More precisely, the GPS-RTK data is with respect to the center of the GPS receiver; if your algorithm output is expressed in IMU or LiDAR frame, it is better to first convert it to the GPS frame and align orientation using SVD, before computing the actual error (e.g., Absolute Trajectory Error (ATE)). We provide such evaluation scripts in the [tools](tools.html) as well.
 
 ### Calibration Process
 ![Calibration images](./figures/calibration_image.png)
