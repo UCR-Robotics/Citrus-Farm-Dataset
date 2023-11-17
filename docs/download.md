@@ -54,7 +54,7 @@ aws s3 sync s3://ucr-robotics/citrus-farm-dataset/ /path/to/local/directory
 
 Alternatively, you may download the dataset from two other backup sources:
 - [Google Drive](https://drive.google.com/drive/folders/12h5CAagVVtz1Od9bK_O6hDMyG8Xh_DLG?usp=sharing)
-- Baidu Pan (TODO)
+- [Baidu Pan](https://pan.baidu.com/s/1NVRTHKvFUue2qaQsb7wlVQ?pwd=ilas) (Credits to Yicheng Jin & Qi Wu@SJTU; please contact robotics_qi@sjtu.edu.cn for any download issue.)
 
 ## Data Format and Usage
 The primary data format we used in data collection is [ROS bags](http://wiki.ros.org/rosbag).
