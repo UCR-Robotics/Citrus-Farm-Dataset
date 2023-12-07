@@ -15,4 +15,4 @@ For sensor calibration:
 - [publish_camera_info.py](https://ucr-robotics.s3.us-west-2.amazonaws.com/citrus-farm-dataset/Calibration/scripts/publish_camera_info.py) Publish the `camera_info` topic of a camera, provided a yaml file specifying camera intrinsics. (Example: [flir_blackfly_cam_info.yaml](https://ucr-robotics.s3.us-west-2.amazonaws.com/citrus-farm-dataset/Calibration/scripts/flir_blackfly_cam_info.yaml))
 
 Evaluation scripts for odometry algorithms:
-- TODO
+- [Odometry-Benchmark](https://github.com/UCR-Robotics/Odometry-Benchmark) We have made our benchmark code available in this repository. It includes scripts for running algorithms on datasets in batch mode, as well as scripts for post-processing the recorded results and calculating error metrics.

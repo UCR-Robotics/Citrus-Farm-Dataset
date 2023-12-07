@@ -40,7 +40,7 @@ citrus-farm-dataset/
 For a complete file list, please see [dataset_file_list.yaml](https://raw.githubusercontent.com/UCR-Robotics/Citrus-Farm-Dataset/main/dataset_file_list.yaml).
 
 ## Download
-We host our dataset on Amazon Web Services (AWS), sponsored by AWS [Open Data program](https://aws.amazon.com/opendata/open-data-sponsorship-program/).
+We host [our dataset](https://registry.opendata.aws/citrus-farm/) on Amazon Web Services (AWS), sponsored by AWS [Open Data program](https://aws.amazon.com/opendata/open-data-sponsorship-program/).
 
 You may use this Python script ([download_citrusfarm.py](https://raw.githubusercontent.com/UCR-Robotics/Citrus-Farm-Dataset/main/scripts/download_citrusfarm.py)) to download the dataset from AWS.
 - By default, the script will download all sequences and all modalities.
