@@ -42,17 +42,18 @@ For a complete file list, please see [dataset_file_list.yaml](https://raw.github
 ## Download
 We host [our dataset](https://registry.opendata.aws/citrus-farm/) on Amazon Web Services (AWS), sponsored by AWS [Open Data program](https://aws.amazon.com/opendata/open-data-sponsorship-program/).
 
-You may use this Python script ([download_citrusfarm.py](https://raw.githubusercontent.com/UCR-Robotics/Citrus-Farm-Dataset/main/scripts/download_citrusfarm.py)) to download the dataset from AWS.
+Option 1: You may use this Python script ([download_citrusfarm.py](https://raw.githubusercontent.com/UCR-Robotics/Citrus-Farm-Dataset/main/scripts/download_citrusfarm.py)) to download the dataset from AWS.
 - By default, the script will download all sequences and all modalities.
 - Change `folder_list` in the script to download only sequences of your interest.
 - Change `modality_list` in the script to download only modalities of your interest.
 
-If you are a user of AWS, you can also download all data directly from the S3 bucket using AWS CLI tool:
+Option 2: If you are using a Ubuntu computer, you can also download all data directly from the S3 bucket using AWS CLI tool (No AWS account required):
 ```
-aws s3 sync s3://ucr-robotics/citrus-farm-dataset/ /path/to/local/directory
+sudo apt install awscli
+aws s3 sync --no-sign-request s3://ucr-robotics/citrus-farm-dataset/ /path/to/local/directory
 ```
 
-Alternatively, you may download the dataset from two other backup sources:
+Option 3: Alternatively, you may download the dataset from two other cloud services:
 - [Google Drive](https://drive.google.com/drive/folders/12h5CAagVVtz1Od9bK_O6hDMyG8Xh_DLG?usp=sharing)
 - [Baidu Pan](https://pan.baidu.com/s/1NVRTHKvFUue2qaQsb7wlVQ?pwd=ilas) (Credits to Yicheng Jin & Qi Wu@SJTU; please contact robotics_qi@sjtu.edu.cn for any download issue.)
 

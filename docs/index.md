@@ -17,7 +17,7 @@ CitrusFarm is a multimodal agricultural robotics dataset that provides both **mu
 **Related Workshop Spotlight:** [Present and Future of Agricultural Robotics and Technologies: Academic and Industry Perspectives](https://sites.google.com/view/agrobotics) (IROS 2023)
 
 **Related Publications:**
-H. Teng, Y. Wang, X. Song and K. Karydis, "Multimodal Dataset for Localization, Mapping and Crop Monitoring in Citrus Tree Farms", in the 18th International Symposium on Visual Computing (ISVC 2023). [[paper](https://link.springer.com/chapter/10.1007/978-3-031-47969-4_44)] [[preprint](https://arxiv.org/abs/2309.15332)]
+H. Teng, Y. Wang, X. Song and K. Karydis, "Multimodal Dataset for Localization, Mapping and Crop Monitoring in Citrus Tree Farms", In International Symposium on Visual Computing (ISVC 2023). [[paper](https://link.springer.com/chapter/10.1007/978-3-031-47969-4_44)] [[preprint](https://arxiv.org/abs/2309.15332)]
 ```
 @inproceedings{teng2023multimodal,
   title={Multimodal Dataset for Localization, Mapping and Crop Monitoring in Citrus Tree Farms},
